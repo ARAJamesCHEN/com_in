@@ -125,7 +125,7 @@ h1, h2,h3, h4, h5, h6, nav a, footer , footer a{
 
 .logo-title {
 	color: #F4A460;
-	font-size: 2.5rem;
+	/** font-size: 2.5rem;*/
 	font-family: "Century Gothic","Tahoma", sans-serif;
 }
 
@@ -909,4 +909,17 @@ footer li {
 
 #copyright, #copyright a{
 	font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .logo-title{
+        font-size: 2.1rem !important;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .logo-title{
+        font-size: 2.3rem !important;
+    }
+
 }
