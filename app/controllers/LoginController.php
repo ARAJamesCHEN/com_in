@@ -37,6 +37,8 @@ class LoginController extends Controller
      */
     public function init(){
 
+        //var_dump($_SESSION['lang']);
+
         parent::init();
 
         $this->formBean = LoginFormBeanFactory::create();

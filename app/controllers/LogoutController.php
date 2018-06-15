@@ -23,6 +23,8 @@ class LogoutController extends Controller
 
         session_start();
 
+        $lang = $_SESSION['lang'];
+
         $_SESSION = array();
 
         if (ini_get("session.use_cookies")) {

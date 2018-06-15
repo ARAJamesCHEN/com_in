@@ -1,6 +1,7 @@
 <?php
-//session_save_path( './' );
-//session_start();
+
+include(APP_PATH . 'comphp/lang/'.'internationalization.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +31,7 @@
 		    <div class="logo-img">
                 <a href="post.php"  rel="nofollow"><img id="logo" src="./static/images/logo2.png" alt="logo"></a>
 			</div>
-			<span class="logo-title"><p>Game Community<p/><span>
+			<span class="logo-title"><p><?php echo msg('logoTitle'); ?><p/><span>
 	    </div>
 		<nav class="col">
 		    <ul>

@@ -7,6 +7,8 @@ class Comphp
 {
     protected $config = [];
 
+    protected $langFile = 'messages.ini';
+
     public function __construct($config)
     {
         $this->config = $config;
@@ -21,6 +23,8 @@ class Comphp
         $this->unregisterGlobals();
         $this->defenseSQLInjection();
         $this->setDbConfig();
+        $this->setLocale();
+        $this->loadLangMessage();
         $this->route();
     }
 
@@ -108,6 +112,45 @@ class Comphp
             ini_set('log_errors', 'On');
         }
     }
+
+    public function setLocale(){
+        $allow_lang = array('en', 'in');
+
+        // echo $_SESSION['lang'];
+
+        if(isset($_GET['lang']) == true && in_array($_GET['lang'], $allow_lang)){
+            //echo 'here1';
+            $_SESSION['lang'] = $_GET['lang'];
+        }else if(isset($_SESSION['lang']) && in_array($_SESSION['lang'], $allow_lang)){
+            //echo 'here2';
+        }else{
+            //echo 'here3';
+            $_SESSION['lang'] = 'in';
+        }
+        //echo $_SESSION['lang'];
+
+    }
+
+    public function loadLangMessage(){
+        $lang = $_SESSION['lang'];
+
+        //var_dump(CORE_PATH);
+
+        $ini_array = parse_ini_file( CORE_PATH.'\\lang\\'.$this->langFile, true);
+
+
+        define('_LANG', $ini_array);
+
+        //var_dump(_LANG['en']['logoTitle']);
+
+        //echo _LANG['en']['logoTitle'];
+
+        //echo _LANG['in']['logoTitle'];
+
+        //var_dump(_LANG['in']['logoTitle']);
+
+    }
+
 
     /**
      * defense for XSS
@@ -273,7 +316,8 @@ class Comphp
             'comphp\base\View' => CORE_PATH . '/base/View.php',
             'comphp\db\Db' => CORE_PATH . '/db/Db.php',
             'comphp\db\Sql' => CORE_PATH . '/db/Sql.php',
-            'comphp\db\base' => CORE_PATH . '/db/FormBean.php'
+            'comphp\db\base' => CORE_PATH . '/db/FormBean.php',
+             'comphp\lang' => CORE_PATH . '/lang/internationalization.php'
         ];
     }
 
