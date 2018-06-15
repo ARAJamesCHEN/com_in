@@ -13,6 +13,7 @@ function msg($s){
     if(isset($_SESSION["lang"])){
         $locale = $_SESSION["lang"];
     }else{
+        //default
         $locale = 'in';
     }
 

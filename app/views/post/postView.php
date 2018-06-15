@@ -137,3 +137,45 @@
     </main>
     <img id="rightImg" class="barImg col-sm-2" src="./static/images/rightImg.jpg" alt="rightImg">
 </form>
+
+<button id="alertID" type="button" style="display:none" data-toggle="modal" data-target="#exampleModalCenter">
+    Alert
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Hello</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-primary">
+                    Login successfully! Your passwords is weak. We suggest you to modify the password!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">OK! Got It</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php
+if(isset($_SESSION[ 'isWeakPwd' ])){
+    //var_dump($_SESSION);
+    $isWeakPwd = $_SESSION[ 'isWeakPwd' ];
+    $isDisplayed = $_SESSION[ 'isDisplayed' ];
+    if($isWeakPwd == "true" && ($isDisplayed == "false")){
+        //var_dump('in');
+        echo '<script type="text/javascript">';
+        echo 'window.onload = function(){document.getElementById("alertID").click()}';
+        echo '</script>';
+        $_SESSION[ 'isDisplayed' ] = "true";
+    }
+
+}
+
+?>

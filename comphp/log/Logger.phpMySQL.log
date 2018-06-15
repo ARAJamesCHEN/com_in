@@ -5505,3 +5505,477 @@ Fri, 15 Jun 18 02:57:45 +0000 : MySQLDB.php : 5b232b292b922 : notice : paras:6,H
 Fri, 15 Jun 18 02:57:45 +0000 : MySQLDB.php : 5b232b292b922 : notice : sql:select pollOptionID,votedNum,T.TotalVote,(FORMAT((votedNum/T.TotalVote) * 100,2)) AS  PercentageOfVote from `PollOption` inner join (select pollID,(sum(votedNum)) AS  TotalVote from `PollOption` GROUP BY pollID) AS  T on PollOption.pollID= T.pollID  WHERE pollOptionID=? and sys = ?
 Fri, 15 Jun 18 02:57:45 +0000 : MySQLDB.php : 5b232b292b922 : notice : paras:7,H
 Fri, 15 Jun 18 02:57:45 +0000 : MySQLDB.php : 5b232b292b922 : notice : Closing log
+Fri, 15 Jun 18 03:13:26 +0000 : MySQLDB.php : 5b232ed627bf1 : notice : connected to server
+Fri, 15 Jun 18 03:13:26 +0000 : MySQLDB.php : 5b232ed627bf1 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:13:26 +0000 : MySQLDB.php : 5b232ed627bf1 : notice : paras:H
+Fri, 15 Jun 18 03:13:26 +0000 : MySQLDB.php : 5b232ed627bf1 : notice : Closing log
+Fri, 15 Jun 18 03:13:42 +0000 : MySQLDB.php : 5b232ee675605 : notice : connected to server
+Fri, 15 Jun 18 03:13:42 +0000 : MySQLDB.php : 5b232ee675605 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:13:42 +0000 : MySQLDB.php : 5b232ee675605 : notice : paras:H
+Fri, 15 Jun 18 03:13:42 +0000 : MySQLDB.php : 5b232ee675605 : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:13:42 +0000 : MySQLDB.php : 5b232ee675605 : notice : paras:James002,H
+Fri, 15 Jun 18 03:13:42 +0000 : MySQLDB.php : 5b232ee675605 : notice : Closing log
+Fri, 15 Jun 18 03:13:42 +0000 : MySQLDB.php : 5b232ee6df8e2 : notice : connected to server
+Fri, 15 Jun 18 03:13:42 +0000 : MySQLDB.php : 5b232ee6df8e2 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:13:42 +0000 : MySQLDB.php : 5b232ee6df8e2 : notice : paras:H
+Fri, 15 Jun 18 03:13:42 +0000 : MySQLDB.php : 5b232ee6df8e2 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:13:42 +0000 : MySQLDB.php : 5b232ee6df8e2 : notice : paras:5,H
+Fri, 15 Jun 18 03:13:42 +0000 : MySQLDB.php : 5b232ee6df8e2 : notice : Closing log
+Fri, 15 Jun 18 03:14:40 +0000 : MySQLDB.php : 5b232f2064202 : notice : connected to server
+Fri, 15 Jun 18 03:14:40 +0000 : MySQLDB.php : 5b232f2064202 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:14:40 +0000 : MySQLDB.php : 5b232f2064202 : notice : paras:H
+Fri, 15 Jun 18 03:14:40 +0000 : MySQLDB.php : 5b232f2064202 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:14:40 +0000 : MySQLDB.php : 5b232f2064202 : notice : paras:5,H
+Fri, 15 Jun 18 03:14:40 +0000 : MySQLDB.php : 5b232f2064202 : notice : Closing log
+Fri, 15 Jun 18 03:15:12 +0000 : MySQLDB.php : 5b232f40bccc7 : notice : connected to server
+Fri, 15 Jun 18 03:15:12 +0000 : MySQLDB.php : 5b232f40bccc7 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:15:12 +0000 : MySQLDB.php : 5b232f40bccc7 : notice : paras:H
+Fri, 15 Jun 18 03:15:12 +0000 : MySQLDB.php : 5b232f40bccc7 : notice : Closing log
+Fri, 15 Jun 18 03:15:25 +0000 : MySQLDB.php : 5b232f4d1b501 : notice : connected to server
+Fri, 15 Jun 18 03:15:25 +0000 : MySQLDB.php : 5b232f4d1b501 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:15:25 +0000 : MySQLDB.php : 5b232f4d1b501 : notice : paras:H
+Fri, 15 Jun 18 03:15:25 +0000 : MySQLDB.php : 5b232f4d1b501 : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:15:25 +0000 : MySQLDB.php : 5b232f4d1b501 : notice : paras:James002,H
+Fri, 15 Jun 18 03:15:25 +0000 : MySQLDB.php : 5b232f4d1b501 : notice : Closing log
+Fri, 15 Jun 18 03:15:25 +0000 : MySQLDB.php : 5b232f4d5b7a7 : notice : connected to server
+Fri, 15 Jun 18 03:15:25 +0000 : MySQLDB.php : 5b232f4d5b7a7 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:15:25 +0000 : MySQLDB.php : 5b232f4d5b7a7 : notice : paras:H
+Fri, 15 Jun 18 03:15:25 +0000 : MySQLDB.php : 5b232f4d5b7a7 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:15:25 +0000 : MySQLDB.php : 5b232f4d5b7a7 : notice : paras:5,H
+Fri, 15 Jun 18 03:15:25 +0000 : MySQLDB.php : 5b232f4d5b7a7 : notice : Closing log
+Fri, 15 Jun 18 03:16:10 +0000 : MySQLDB.php : 5b232f7a744c0 : notice : connected to server
+Fri, 15 Jun 18 03:16:10 +0000 : MySQLDB.php : 5b232f7a744c0 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:16:10 +0000 : MySQLDB.php : 5b232f7a744c0 : notice : paras:H
+Fri, 15 Jun 18 03:16:10 +0000 : MySQLDB.php : 5b232f7a744c0 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:16:10 +0000 : MySQLDB.php : 5b232f7a744c0 : notice : paras:5,H
+Fri, 15 Jun 18 03:16:10 +0000 : MySQLDB.php : 5b232f7a744c0 : notice : Closing log
+Fri, 15 Jun 18 03:16:11 +0000 : MySQLDB.php : 5b232f7b61c4c : notice : connected to server
+Fri, 15 Jun 18 03:16:11 +0000 : MySQLDB.php : 5b232f7b61c4c : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:16:11 +0000 : MySQLDB.php : 5b232f7b61c4c : notice : paras:H
+Fri, 15 Jun 18 03:16:11 +0000 : MySQLDB.php : 5b232f7b61c4c : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:16:11 +0000 : MySQLDB.php : 5b232f7b61c4c : notice : paras:5,H
+Fri, 15 Jun 18 03:16:11 +0000 : MySQLDB.php : 5b232f7b61c4c : notice : Closing log
+Fri, 15 Jun 18 03:16:12 +0000 : MySQLDB.php : 5b232f7c3898a : notice : connected to server
+Fri, 15 Jun 18 03:16:12 +0000 : MySQLDB.php : 5b232f7c3898a : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:16:12 +0000 : MySQLDB.php : 5b232f7c3898a : notice : paras:H
+Fri, 15 Jun 18 03:16:12 +0000 : MySQLDB.php : 5b232f7c3898a : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:16:12 +0000 : MySQLDB.php : 5b232f7c3898a : notice : paras:5,H
+Fri, 15 Jun 18 03:16:12 +0000 : MySQLDB.php : 5b232f7c3898a : notice : Closing log
+Fri, 15 Jun 18 03:16:24 +0000 : MySQLDB.php : 5b232f88c9027 : notice : connected to server
+Fri, 15 Jun 18 03:16:24 +0000 : MySQLDB.php : 5b232f88c9027 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:16:24 +0000 : MySQLDB.php : 5b232f88c9027 : notice : paras:H
+Fri, 15 Jun 18 03:16:24 +0000 : MySQLDB.php : 5b232f88c9027 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:16:24 +0000 : MySQLDB.php : 5b232f88c9027 : notice : paras:5,H
+Fri, 15 Jun 18 03:16:24 +0000 : MySQLDB.php : 5b232f88c9027 : notice : Closing log
+Fri, 15 Jun 18 03:17:10 +0000 : MySQLDB.php : 5b232fb6755ce : notice : connected to server
+Fri, 15 Jun 18 03:17:10 +0000 : MySQLDB.php : 5b232fb6755ce : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:17:10 +0000 : MySQLDB.php : 5b232fb6755ce : notice : paras:H
+Fri, 15 Jun 18 03:17:10 +0000 : MySQLDB.php : 5b232fb6755ce : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:17:10 +0000 : MySQLDB.php : 5b232fb6755ce : notice : paras:5,H
+Fri, 15 Jun 18 03:17:10 +0000 : MySQLDB.php : 5b232fb6755ce : notice : Closing log
+Fri, 15 Jun 18 03:18:31 +0000 : MySQLDB.php : 5b2330076cecc : notice : connected to server
+Fri, 15 Jun 18 03:18:31 +0000 : MySQLDB.php : 5b2330076cecc : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:18:31 +0000 : MySQLDB.php : 5b2330076cecc : notice : paras:H
+Fri, 15 Jun 18 03:18:31 +0000 : MySQLDB.php : 5b2330076cecc : notice : Closing log
+Fri, 15 Jun 18 03:18:31 +0000 : MySQLDB.php : 5b23300783cbb : notice : connected to server
+Fri, 15 Jun 18 03:18:31 +0000 : MySQLDB.php : 5b23300783cbb : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:18:31 +0000 : MySQLDB.php : 5b23300783cbb : notice : paras:H
+Fri, 15 Jun 18 03:18:31 +0000 : MySQLDB.php : 5b23300783cbb : notice : Closing log
+Fri, 15 Jun 18 03:18:38 +0000 : MySQLDB.php : 5b23300ed0927 : notice : connected to server
+Fri, 15 Jun 18 03:18:38 +0000 : MySQLDB.php : 5b23300ed0927 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:18:38 +0000 : MySQLDB.php : 5b23300ed0927 : notice : paras:H
+Fri, 15 Jun 18 03:18:38 +0000 : MySQLDB.php : 5b23300ed0927 : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:18:38 +0000 : MySQLDB.php : 5b23300ed0927 : notice : paras:James002,H
+Fri, 15 Jun 18 03:18:39 +0000 : MySQLDB.php : 5b23300ed0927 : notice : Closing log
+Fri, 15 Jun 18 03:18:39 +0000 : MySQLDB.php : 5b23300f1338d : notice : connected to server
+Fri, 15 Jun 18 03:18:39 +0000 : MySQLDB.php : 5b23300f1338d : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:18:39 +0000 : MySQLDB.php : 5b23300f1338d : notice : paras:H
+Fri, 15 Jun 18 03:18:39 +0000 : MySQLDB.php : 5b23300f1338d : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:18:39 +0000 : MySQLDB.php : 5b23300f1338d : notice : paras:5,H
+Fri, 15 Jun 18 03:18:39 +0000 : MySQLDB.php : 5b23300f1338d : notice : Closing log
+Fri, 15 Jun 18 03:19:46 +0000 : MySQLDB.php : 5b233052e235e : notice : connected to server
+Fri, 15 Jun 18 03:19:46 +0000 : MySQLDB.php : 5b233052e235e : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:19:46 +0000 : MySQLDB.php : 5b233052e235e : notice : paras:H
+Fri, 15 Jun 18 03:19:46 +0000 : MySQLDB.php : 5b233052e235e : notice : Closing log
+Fri, 15 Jun 18 03:19:47 +0000 : MySQLDB.php : 5b23305304c81 : notice : connected to server
+Fri, 15 Jun 18 03:19:47 +0000 : MySQLDB.php : 5b23305304c81 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:19:47 +0000 : MySQLDB.php : 5b23305304c81 : notice : paras:H
+Fri, 15 Jun 18 03:19:47 +0000 : MySQLDB.php : 5b23305304c81 : notice : Closing log
+Fri, 15 Jun 18 03:19:56 +0000 : MySQLDB.php : 5b23305c30e3b : notice : connected to server
+Fri, 15 Jun 18 03:19:56 +0000 : MySQLDB.php : 5b23305c30e3b : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:19:56 +0000 : MySQLDB.php : 5b23305c30e3b : notice : paras:H
+Fri, 15 Jun 18 03:19:56 +0000 : MySQLDB.php : 5b23305c30e3b : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:19:56 +0000 : MySQLDB.php : 5b23305c30e3b : notice : paras:James002,H
+Fri, 15 Jun 18 03:19:56 +0000 : MySQLDB.php : 5b23305c30e3b : notice : Closing log
+Fri, 15 Jun 18 03:19:56 +0000 : MySQLDB.php : 5b23305c88b32 : notice : connected to server
+Fri, 15 Jun 18 03:19:56 +0000 : MySQLDB.php : 5b23305c88b32 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:19:56 +0000 : MySQLDB.php : 5b23305c88b32 : notice : paras:H
+Fri, 15 Jun 18 03:19:56 +0000 : MySQLDB.php : 5b23305c88b32 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:19:56 +0000 : MySQLDB.php : 5b23305c88b32 : notice : paras:5,H
+Fri, 15 Jun 18 03:19:56 +0000 : MySQLDB.php : 5b23305c88b32 : notice : Closing log
+Fri, 15 Jun 18 03:20:41 +0000 : MySQLDB.php : 5b233089b9bab : notice : connected to server
+Fri, 15 Jun 18 03:20:41 +0000 : MySQLDB.php : 5b233089b9bab : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:20:41 +0000 : MySQLDB.php : 5b233089b9bab : notice : paras:H
+Fri, 15 Jun 18 03:20:41 +0000 : MySQLDB.php : 5b233089b9bab : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:20:41 +0000 : MySQLDB.php : 5b233089b9bab : notice : paras:5,H
+Fri, 15 Jun 18 03:20:41 +0000 : MySQLDB.php : 5b233089b9bab : notice : Closing log
+Fri, 15 Jun 18 03:20:43 +0000 : MySQLDB.php : 5b23308b8a573 : notice : connected to server
+Fri, 15 Jun 18 03:20:43 +0000 : MySQLDB.php : 5b23308b8a573 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:20:43 +0000 : MySQLDB.php : 5b23308b8a573 : notice : paras:H
+Fri, 15 Jun 18 03:20:43 +0000 : MySQLDB.php : 5b23308b8a573 : notice : Closing log
+Fri, 15 Jun 18 03:20:43 +0000 : MySQLDB.php : 5b23308b9d2ca : notice : connected to server
+Fri, 15 Jun 18 03:20:43 +0000 : MySQLDB.php : 5b23308b9d2ca : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:20:43 +0000 : MySQLDB.php : 5b23308b9d2ca : notice : paras:H
+Fri, 15 Jun 18 03:20:43 +0000 : MySQLDB.php : 5b23308b9d2ca : notice : Closing log
+Fri, 15 Jun 18 03:20:49 +0000 : MySQLDB.php : 5b2330918dd9a : notice : connected to server
+Fri, 15 Jun 18 03:20:49 +0000 : MySQLDB.php : 5b2330918dd9a : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:20:49 +0000 : MySQLDB.php : 5b2330918dd9a : notice : paras:H
+Fri, 15 Jun 18 03:20:49 +0000 : MySQLDB.php : 5b2330918dd9a : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:20:49 +0000 : MySQLDB.php : 5b2330918dd9a : notice : paras:James002,H
+Fri, 15 Jun 18 03:20:49 +0000 : MySQLDB.php : 5b2330918dd9a : notice : Closing log
+Fri, 15 Jun 18 03:20:49 +0000 : MySQLDB.php : 5b233091b0e3b : notice : connected to server
+Fri, 15 Jun 18 03:20:49 +0000 : MySQLDB.php : 5b233091b0e3b : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:20:49 +0000 : MySQLDB.php : 5b233091b0e3b : notice : paras:H
+Fri, 15 Jun 18 03:20:49 +0000 : MySQLDB.php : 5b233091b0e3b : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:20:49 +0000 : MySQLDB.php : 5b233091b0e3b : notice : paras:5,H
+Fri, 15 Jun 18 03:20:49 +0000 : MySQLDB.php : 5b233091b0e3b : notice : Closing log
+Fri, 15 Jun 18 03:21:30 +0000 : MySQLDB.php : 5b2330baa8b3e : notice : connected to server
+Fri, 15 Jun 18 03:21:30 +0000 : MySQLDB.php : 5b2330baa8b3e : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:21:30 +0000 : MySQLDB.php : 5b2330baa8b3e : notice : paras:H
+Fri, 15 Jun 18 03:21:30 +0000 : MySQLDB.php : 5b2330baa8b3e : notice : Closing log
+Fri, 15 Jun 18 03:21:30 +0000 : MySQLDB.php : 5b2330bab9e61 : notice : connected to server
+Fri, 15 Jun 18 03:21:30 +0000 : MySQLDB.php : 5b2330bab9e61 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:21:30 +0000 : MySQLDB.php : 5b2330bab9e61 : notice : paras:H
+Fri, 15 Jun 18 03:21:30 +0000 : MySQLDB.php : 5b2330bab9e61 : notice : Closing log
+Fri, 15 Jun 18 03:21:37 +0000 : MySQLDB.php : 5b2330c1d24ed : notice : connected to server
+Fri, 15 Jun 18 03:21:37 +0000 : MySQLDB.php : 5b2330c1d24ed : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:21:37 +0000 : MySQLDB.php : 5b2330c1d24ed : notice : paras:H
+Fri, 15 Jun 18 03:21:37 +0000 : MySQLDB.php : 5b2330c1d24ed : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:21:37 +0000 : MySQLDB.php : 5b2330c1d24ed : notice : paras:James002,H
+Fri, 15 Jun 18 03:21:37 +0000 : MySQLDB.php : 5b2330c1d24ed : notice : Closing log
+Fri, 15 Jun 18 03:21:38 +0000 : MySQLDB.php : 5b2330c211093 : notice : connected to server
+Fri, 15 Jun 18 03:21:38 +0000 : MySQLDB.php : 5b2330c211093 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:21:38 +0000 : MySQLDB.php : 5b2330c211093 : notice : paras:H
+Fri, 15 Jun 18 03:21:38 +0000 : MySQLDB.php : 5b2330c211093 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:21:38 +0000 : MySQLDB.php : 5b2330c211093 : notice : paras:5,H
+Fri, 15 Jun 18 03:21:38 +0000 : MySQLDB.php : 5b2330c211093 : notice : Closing log
+Fri, 15 Jun 18 03:23:29 +0000 : MySQLDB.php : 5b2331318ff93 : notice : connected to server
+Fri, 15 Jun 18 03:23:29 +0000 : MySQLDB.php : 5b2331318ff93 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:23:29 +0000 : MySQLDB.php : 5b2331318ff93 : notice : paras:H
+Fri, 15 Jun 18 03:23:29 +0000 : MySQLDB.php : 5b2331318ff93 : notice : Closing log
+Fri, 15 Jun 18 03:23:29 +0000 : MySQLDB.php : 5b233131a3e28 : notice : connected to server
+Fri, 15 Jun 18 03:23:29 +0000 : MySQLDB.php : 5b233131a3e28 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:23:29 +0000 : MySQLDB.php : 5b233131a3e28 : notice : paras:H
+Fri, 15 Jun 18 03:23:29 +0000 : MySQLDB.php : 5b233131a3e28 : notice : Closing log
+Fri, 15 Jun 18 03:23:35 +0000 : MySQLDB.php : 5b2331373e68a : notice : connected to server
+Fri, 15 Jun 18 03:23:35 +0000 : MySQLDB.php : 5b2331373e68a : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:23:35 +0000 : MySQLDB.php : 5b2331373e68a : notice : paras:H
+Fri, 15 Jun 18 03:23:35 +0000 : MySQLDB.php : 5b2331373e68a : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:23:35 +0000 : MySQLDB.php : 5b2331373e68a : notice : paras:James002,H
+Fri, 15 Jun 18 03:23:35 +0000 : MySQLDB.php : 5b2331373e68a : notice : Closing log
+Fri, 15 Jun 18 03:23:35 +0000 : MySQLDB.php : 5b2331376f805 : notice : connected to server
+Fri, 15 Jun 18 03:23:35 +0000 : MySQLDB.php : 5b2331376f805 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:23:35 +0000 : MySQLDB.php : 5b2331376f805 : notice : paras:H
+Fri, 15 Jun 18 03:23:35 +0000 : MySQLDB.php : 5b2331376f805 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:23:35 +0000 : MySQLDB.php : 5b2331376f805 : notice : paras:5,H
+Fri, 15 Jun 18 03:23:35 +0000 : MySQLDB.php : 5b2331376f805 : notice : Closing log
+Fri, 15 Jun 18 03:29:02 +0000 : MySQLDB.php : 5b23327e6f2cf : notice : connected to server
+Fri, 15 Jun 18 03:29:02 +0000 : MySQLDB.php : 5b23327e6f2cf : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:29:02 +0000 : MySQLDB.php : 5b23327e6f2cf : notice : paras:H
+Fri, 15 Jun 18 03:29:02 +0000 : MySQLDB.php : 5b23327e6f2cf : notice : Closing log
+Fri, 15 Jun 18 03:29:02 +0000 : MySQLDB.php : 5b23327e842af : notice : connected to server
+Fri, 15 Jun 18 03:29:02 +0000 : MySQLDB.php : 5b23327e842af : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:29:02 +0000 : MySQLDB.php : 5b23327e842af : notice : paras:H
+Fri, 15 Jun 18 03:29:02 +0000 : MySQLDB.php : 5b23327e842af : notice : Closing log
+Fri, 15 Jun 18 03:29:07 +0000 : MySQLDB.php : 5b233283c995f : notice : connected to server
+Fri, 15 Jun 18 03:29:07 +0000 : MySQLDB.php : 5b233283c995f : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:29:07 +0000 : MySQLDB.php : 5b233283c995f : notice : paras:H
+Fri, 15 Jun 18 03:29:07 +0000 : MySQLDB.php : 5b233283c995f : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:29:07 +0000 : MySQLDB.php : 5b233283c995f : notice : paras:James002,H
+Fri, 15 Jun 18 03:29:07 +0000 : MySQLDB.php : 5b233283c995f : notice : Closing log
+Fri, 15 Jun 18 03:29:08 +0000 : MySQLDB.php : 5b233284248ef : notice : connected to server
+Fri, 15 Jun 18 03:29:08 +0000 : MySQLDB.php : 5b233284248ef : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:29:08 +0000 : MySQLDB.php : 5b233284248ef : notice : paras:H
+Fri, 15 Jun 18 03:29:08 +0000 : MySQLDB.php : 5b233284248ef : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:29:08 +0000 : MySQLDB.php : 5b233284248ef : notice : paras:5,H
+Fri, 15 Jun 18 03:29:08 +0000 : MySQLDB.php : 5b233284248ef : notice : Closing log
+Fri, 15 Jun 18 03:29:50 +0000 : MySQLDB.php : 5b2332ae63142 : notice : connected to server
+Fri, 15 Jun 18 03:29:50 +0000 : MySQLDB.php : 5b2332ae63142 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:29:50 +0000 : MySQLDB.php : 5b2332ae63142 : notice : paras:H
+Fri, 15 Jun 18 03:29:50 +0000 : MySQLDB.php : 5b2332ae63142 : notice : Closing log
+Fri, 15 Jun 18 03:29:50 +0000 : MySQLDB.php : 5b2332ae7a9bf : notice : connected to server
+Fri, 15 Jun 18 03:29:50 +0000 : MySQLDB.php : 5b2332ae7a9bf : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:29:50 +0000 : MySQLDB.php : 5b2332ae7a9bf : notice : paras:H
+Fri, 15 Jun 18 03:29:50 +0000 : MySQLDB.php : 5b2332ae7a9bf : notice : Closing log
+Fri, 15 Jun 18 03:29:56 +0000 : MySQLDB.php : 5b2332b402638 : notice : connected to server
+Fri, 15 Jun 18 03:29:56 +0000 : MySQLDB.php : 5b2332b402638 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:29:56 +0000 : MySQLDB.php : 5b2332b402638 : notice : paras:H
+Fri, 15 Jun 18 03:29:56 +0000 : MySQLDB.php : 5b2332b402638 : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:29:56 +0000 : MySQLDB.php : 5b2332b402638 : notice : paras:James002,H
+Fri, 15 Jun 18 03:29:56 +0000 : MySQLDB.php : 5b2332b402638 : notice : Closing log
+Fri, 15 Jun 18 03:29:56 +0000 : MySQLDB.php : 5b2332b4329a7 : notice : connected to server
+Fri, 15 Jun 18 03:29:56 +0000 : MySQLDB.php : 5b2332b4329a7 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:29:56 +0000 : MySQLDB.php : 5b2332b4329a7 : notice : paras:H
+Fri, 15 Jun 18 03:29:56 +0000 : MySQLDB.php : 5b2332b4329a7 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:29:56 +0000 : MySQLDB.php : 5b2332b4329a7 : notice : paras:5,H
+Fri, 15 Jun 18 03:29:56 +0000 : MySQLDB.php : 5b2332b4329a7 : notice : Closing log
+Fri, 15 Jun 18 03:31:10 +0000 : MySQLDB.php : 5b2332fe129d6 : notice : connected to server
+Fri, 15 Jun 18 03:31:10 +0000 : MySQLDB.php : 5b2332fe129d6 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:31:10 +0000 : MySQLDB.php : 5b2332fe129d6 : notice : paras:H
+Fri, 15 Jun 18 03:31:10 +0000 : MySQLDB.php : 5b2332fe129d6 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:31:10 +0000 : MySQLDB.php : 5b2332fe129d6 : notice : paras:5,H
+Fri, 15 Jun 18 03:31:10 +0000 : MySQLDB.php : 5b2332fe129d6 : notice : Closing log
+Fri, 15 Jun 18 03:31:26 +0000 : MySQLDB.php : 5b23330e8aa18 : notice : connected to server
+Fri, 15 Jun 18 03:31:26 +0000 : MySQLDB.php : 5b23330e8aa18 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:31:26 +0000 : MySQLDB.php : 5b23330e8aa18 : notice : paras:H
+Fri, 15 Jun 18 03:31:26 +0000 : MySQLDB.php : 5b23330e8aa18 : notice : Closing log
+Fri, 15 Jun 18 03:31:26 +0000 : MySQLDB.php : 5b23330e9b13c : notice : connected to server
+Fri, 15 Jun 18 03:31:26 +0000 : MySQLDB.php : 5b23330e9b13c : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:31:26 +0000 : MySQLDB.php : 5b23330e9b13c : notice : paras:H
+Fri, 15 Jun 18 03:31:26 +0000 : MySQLDB.php : 5b23330e9b13c : notice : Closing log
+Fri, 15 Jun 18 03:31:32 +0000 : MySQLDB.php : 5b233314018d1 : notice : connected to server
+Fri, 15 Jun 18 03:31:32 +0000 : MySQLDB.php : 5b233314018d1 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:31:32 +0000 : MySQLDB.php : 5b233314018d1 : notice : paras:H
+Fri, 15 Jun 18 03:31:32 +0000 : MySQLDB.php : 5b233314018d1 : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:31:32 +0000 : MySQLDB.php : 5b233314018d1 : notice : paras:James002,H
+Fri, 15 Jun 18 03:31:32 +0000 : MySQLDB.php : 5b233314018d1 : notice : Closing log
+Fri, 15 Jun 18 03:31:32 +0000 : MySQLDB.php : 5b2333142a2fd : notice : connected to server
+Fri, 15 Jun 18 03:31:32 +0000 : MySQLDB.php : 5b2333142a2fd : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:31:32 +0000 : MySQLDB.php : 5b2333142a2fd : notice : paras:H
+Fri, 15 Jun 18 03:31:32 +0000 : MySQLDB.php : 5b2333142a2fd : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:31:32 +0000 : MySQLDB.php : 5b2333142a2fd : notice : paras:5,H
+Fri, 15 Jun 18 03:31:32 +0000 : MySQLDB.php : 5b2333142a2fd : notice : Closing log
+Fri, 15 Jun 18 03:32:36 +0000 : MySQLDB.php : 5b2333542e455 : notice : connected to server
+Fri, 15 Jun 18 03:32:36 +0000 : MySQLDB.php : 5b2333542e455 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:32:36 +0000 : MySQLDB.php : 5b2333542e455 : notice : paras:H
+Fri, 15 Jun 18 03:32:36 +0000 : MySQLDB.php : 5b2333542e455 : notice : Closing log
+Fri, 15 Jun 18 03:32:36 +0000 : MySQLDB.php : 5b23335441429 : notice : connected to server
+Fri, 15 Jun 18 03:32:36 +0000 : MySQLDB.php : 5b23335441429 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:32:36 +0000 : MySQLDB.php : 5b23335441429 : notice : paras:H
+Fri, 15 Jun 18 03:32:36 +0000 : MySQLDB.php : 5b23335441429 : notice : Closing log
+Fri, 15 Jun 18 03:32:41 +0000 : MySQLDB.php : 5b233359ef11d : notice : connected to server
+Fri, 15 Jun 18 03:32:41 +0000 : MySQLDB.php : 5b233359ef11d : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:32:41 +0000 : MySQLDB.php : 5b233359ef11d : notice : paras:H
+Fri, 15 Jun 18 03:32:42 +0000 : MySQLDB.php : 5b233359ef11d : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:32:42 +0000 : MySQLDB.php : 5b233359ef11d : notice : paras:James002,H
+Fri, 15 Jun 18 03:32:42 +0000 : MySQLDB.php : 5b233359ef11d : notice : Closing log
+Fri, 15 Jun 18 03:32:42 +0000 : MySQLDB.php : 5b23335a237d3 : notice : connected to server
+Fri, 15 Jun 18 03:32:42 +0000 : MySQLDB.php : 5b23335a237d3 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:32:42 +0000 : MySQLDB.php : 5b23335a237d3 : notice : paras:H
+Fri, 15 Jun 18 03:32:42 +0000 : MySQLDB.php : 5b23335a237d3 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:32:42 +0000 : MySQLDB.php : 5b23335a237d3 : notice : paras:5,H
+Fri, 15 Jun 18 03:32:42 +0000 : MySQLDB.php : 5b23335a237d3 : notice : Closing log
+Fri, 15 Jun 18 03:34:46 +0000 : MySQLDB.php : 5b2333d65fe8d : notice : connected to server
+Fri, 15 Jun 18 03:34:46 +0000 : MySQLDB.php : 5b2333d65fe8d : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:34:46 +0000 : MySQLDB.php : 5b2333d65fe8d : notice : paras:H
+Fri, 15 Jun 18 03:34:46 +0000 : MySQLDB.php : 5b2333d65fe8d : notice : Closing log
+Fri, 15 Jun 18 03:34:46 +0000 : MySQLDB.php : 5b2333d6761a8 : notice : connected to server
+Fri, 15 Jun 18 03:34:46 +0000 : MySQLDB.php : 5b2333d6761a8 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:34:46 +0000 : MySQLDB.php : 5b2333d6761a8 : notice : paras:H
+Fri, 15 Jun 18 03:34:46 +0000 : MySQLDB.php : 5b2333d6761a8 : notice : Closing log
+Fri, 15 Jun 18 03:34:51 +0000 : MySQLDB.php : 5b2333dbc0b72 : notice : connected to server
+Fri, 15 Jun 18 03:34:51 +0000 : MySQLDB.php : 5b2333dbc0b72 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:34:51 +0000 : MySQLDB.php : 5b2333dbc0b72 : notice : paras:H
+Fri, 15 Jun 18 03:34:51 +0000 : MySQLDB.php : 5b2333dbc0b72 : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:34:51 +0000 : MySQLDB.php : 5b2333dbc0b72 : notice : paras:James002,H
+Fri, 15 Jun 18 03:34:51 +0000 : MySQLDB.php : 5b2333dbc0b72 : notice : Closing log
+Fri, 15 Jun 18 03:34:51 +0000 : MySQLDB.php : 5b2333dbe9b8b : notice : connected to server
+Fri, 15 Jun 18 03:34:51 +0000 : MySQLDB.php : 5b2333dbe9b8b : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:34:51 +0000 : MySQLDB.php : 5b2333dbe9b8b : notice : paras:H
+Fri, 15 Jun 18 03:34:51 +0000 : MySQLDB.php : 5b2333dbe9b8b : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:34:51 +0000 : MySQLDB.php : 5b2333dbe9b8b : notice : paras:5,H
+Fri, 15 Jun 18 03:34:52 +0000 : MySQLDB.php : 5b2333dbe9b8b : notice : Closing log
+Fri, 15 Jun 18 03:35:08 +0000 : MySQLDB.php : 5b2333ec9991f : notice : connected to server
+Fri, 15 Jun 18 03:35:08 +0000 : MySQLDB.php : 5b2333ec9991f : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:35:08 +0000 : MySQLDB.php : 5b2333ec9991f : notice : paras:H
+Fri, 15 Jun 18 03:35:08 +0000 : MySQLDB.php : 5b2333ec9991f : notice : Closing log
+Fri, 15 Jun 18 03:35:08 +0000 : MySQLDB.php : 5b2333ecb353d : notice : connected to server
+Fri, 15 Jun 18 03:35:08 +0000 : MySQLDB.php : 5b2333ecb353d : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:35:08 +0000 : MySQLDB.php : 5b2333ecb353d : notice : paras:H
+Fri, 15 Jun 18 03:35:08 +0000 : MySQLDB.php : 5b2333ecb353d : notice : Closing log
+Fri, 15 Jun 18 03:35:13 +0000 : MySQLDB.php : 5b2333f185a34 : notice : connected to server
+Fri, 15 Jun 18 03:35:13 +0000 : MySQLDB.php : 5b2333f185a34 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:35:13 +0000 : MySQLDB.php : 5b2333f185a34 : notice : paras:H
+Fri, 15 Jun 18 03:35:13 +0000 : MySQLDB.php : 5b2333f185a34 : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:35:13 +0000 : MySQLDB.php : 5b2333f185a34 : notice : paras:James002,H
+Fri, 15 Jun 18 03:35:13 +0000 : MySQLDB.php : 5b2333f185a34 : notice : Closing log
+Fri, 15 Jun 18 03:35:13 +0000 : MySQLDB.php : 5b2333f1b9b22 : notice : connected to server
+Fri, 15 Jun 18 03:35:13 +0000 : MySQLDB.php : 5b2333f1b9b22 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:35:13 +0000 : MySQLDB.php : 5b2333f1b9b22 : notice : paras:H
+Fri, 15 Jun 18 03:35:13 +0000 : MySQLDB.php : 5b2333f1b9b22 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:35:13 +0000 : MySQLDB.php : 5b2333f1b9b22 : notice : paras:5,H
+Fri, 15 Jun 18 03:35:13 +0000 : MySQLDB.php : 5b2333f1b9b22 : notice : Closing log
+Fri, 15 Jun 18 03:35:51 +0000 : MySQLDB.php : 5b233417e6467 : notice : connected to server
+Fri, 15 Jun 18 03:35:51 +0000 : MySQLDB.php : 5b233417e6467 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:35:51 +0000 : MySQLDB.php : 5b233417e6467 : notice : paras:H
+Fri, 15 Jun 18 03:35:51 +0000 : MySQLDB.php : 5b233417e6467 : notice : Closing log
+Fri, 15 Jun 18 03:35:52 +0000 : MySQLDB.php : 5b23341809619 : notice : connected to server
+Fri, 15 Jun 18 03:35:52 +0000 : MySQLDB.php : 5b23341809619 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:35:52 +0000 : MySQLDB.php : 5b23341809619 : notice : paras:H
+Fri, 15 Jun 18 03:35:52 +0000 : MySQLDB.php : 5b23341809619 : notice : Closing log
+Fri, 15 Jun 18 03:35:57 +0000 : MySQLDB.php : 5b23341d035e8 : notice : connected to server
+Fri, 15 Jun 18 03:35:57 +0000 : MySQLDB.php : 5b23341d035e8 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:35:57 +0000 : MySQLDB.php : 5b23341d035e8 : notice : paras:H
+Fri, 15 Jun 18 03:35:57 +0000 : MySQLDB.php : 5b23341d035e8 : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:35:57 +0000 : MySQLDB.php : 5b23341d035e8 : notice : paras:James002,H
+Fri, 15 Jun 18 03:35:57 +0000 : MySQLDB.php : 5b23341d035e8 : notice : Closing log
+Fri, 15 Jun 18 03:35:57 +0000 : MySQLDB.php : 5b23341dca80f : notice : connected to server
+Fri, 15 Jun 18 03:35:57 +0000 : MySQLDB.php : 5b23341dca80f : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:35:57 +0000 : MySQLDB.php : 5b23341dca80f : notice : paras:H
+Fri, 15 Jun 18 03:35:57 +0000 : MySQLDB.php : 5b23341dca80f : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:35:57 +0000 : MySQLDB.php : 5b23341dca80f : notice : paras:5,H
+Fri, 15 Jun 18 03:35:57 +0000 : MySQLDB.php : 5b23341dca80f : notice : Closing log
+Fri, 15 Jun 18 03:36:49 +0000 : MySQLDB.php : 5b2334514cebe : notice : connected to server
+Fri, 15 Jun 18 03:36:49 +0000 : MySQLDB.php : 5b2334514cebe : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:36:49 +0000 : MySQLDB.php : 5b2334514cebe : notice : paras:H
+Fri, 15 Jun 18 03:36:49 +0000 : MySQLDB.php : 5b2334514cebe : notice : Closing log
+Fri, 15 Jun 18 03:36:49 +0000 : MySQLDB.php : 5b2334515e417 : notice : connected to server
+Fri, 15 Jun 18 03:36:49 +0000 : MySQLDB.php : 5b2334515e417 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:36:49 +0000 : MySQLDB.php : 5b2334515e417 : notice : paras:H
+Fri, 15 Jun 18 03:36:49 +0000 : MySQLDB.php : 5b2334515e417 : notice : Closing log
+Fri, 15 Jun 18 03:36:54 +0000 : MySQLDB.php : 5b2334560b6ed : notice : connected to server
+Fri, 15 Jun 18 03:36:54 +0000 : MySQLDB.php : 5b2334560b6ed : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:36:54 +0000 : MySQLDB.php : 5b2334560b6ed : notice : paras:H
+Fri, 15 Jun 18 03:36:54 +0000 : MySQLDB.php : 5b2334560b6ed : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:36:54 +0000 : MySQLDB.php : 5b2334560b6ed : notice : paras:James002,H
+Fri, 15 Jun 18 03:36:54 +0000 : MySQLDB.php : 5b2334560b6ed : notice : Closing log
+Fri, 15 Jun 18 03:36:54 +0000 : MySQLDB.php : 5b23345634592 : notice : connected to server
+Fri, 15 Jun 18 03:36:54 +0000 : MySQLDB.php : 5b23345634592 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:36:54 +0000 : MySQLDB.php : 5b23345634592 : notice : paras:H
+Fri, 15 Jun 18 03:36:54 +0000 : MySQLDB.php : 5b23345634592 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:36:54 +0000 : MySQLDB.php : 5b23345634592 : notice : paras:5,H
+Fri, 15 Jun 18 03:36:54 +0000 : MySQLDB.php : 5b23345634592 : notice : Closing log
+Fri, 15 Jun 18 03:37:19 +0000 : MySQLDB.php : 5b23346fdc189 : notice : connected to server
+Fri, 15 Jun 18 03:37:19 +0000 : MySQLDB.php : 5b23346fdc189 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:37:19 +0000 : MySQLDB.php : 5b23346fdc189 : notice : paras:H
+Fri, 15 Jun 18 03:37:19 +0000 : MySQLDB.php : 5b23346fdc189 : notice : sql:select * from `Poll`  WHERE pollID=? and sys = ?
+Fri, 15 Jun 18 03:37:19 +0000 : MySQLDB.php : 5b23346fdc189 : notice : paras:2,H
+Fri, 15 Jun 18 03:37:19 +0000 : MySQLDB.php : 5b23346fdc189 : notice : sql:select * from `Board`  WHERE boardID=? and sys = ?
+Fri, 15 Jun 18 03:37:19 +0000 : MySQLDB.php : 5b23346fdc189 : notice : paras:5,H
+Fri, 15 Jun 18 03:37:19 +0000 : MySQLDB.php : 5b23346fdc189 : notice : sql:select * from `UserInfo`  WHERE userID=? and sys = ?
+Fri, 15 Jun 18 03:37:19 +0000 : MySQLDB.php : 5b23346fdc189 : notice : paras:4,H
+Fri, 15 Jun 18 03:37:20 +0000 : MySQLDB.php : 5b23346fdc189 : notice : sql:select * from `PollOption`  WHERE pollID=? and sys = ?
+Fri, 15 Jun 18 03:37:20 +0000 : MySQLDB.php : 5b23346fdc189 : notice : paras:2,H
+Fri, 15 Jun 18 03:37:20 +0000 : MySQLDB.php : 5b23346fdc189 : notice : sql:select pollOptionID,votedNum,T.TotalVote,(FORMAT((votedNum/T.TotalVote) * 100,2)) AS  PercentageOfVote from `PollOption` inner join (select pollID,(sum(votedNum)) AS  TotalVote from `PollOption` GROUP BY pollID) AS  T on PollOption.pollID= T.pollID  WHERE pollOptionID=? and sys = ?
+Fri, 15 Jun 18 03:37:20 +0000 : MySQLDB.php : 5b23346fdc189 : notice : paras:3,H
+Fri, 15 Jun 18 03:37:20 +0000 : MySQLDB.php : 5b23346fdc189 : notice : sql:select pollOptionID,votedNum,T.TotalVote,(FORMAT((votedNum/T.TotalVote) * 100,2)) AS  PercentageOfVote from `PollOption` inner join (select pollID,(sum(votedNum)) AS  TotalVote from `PollOption` GROUP BY pollID) AS  T on PollOption.pollID= T.pollID  WHERE pollOptionID=? and sys = ?
+Fri, 15 Jun 18 03:37:20 +0000 : MySQLDB.php : 5b23346fdc189 : notice : paras:4,H
+Fri, 15 Jun 18 03:37:20 +0000 : MySQLDB.php : 5b23346fdc189 : notice : sql:select pollOptionID,votedNum,T.TotalVote,(FORMAT((votedNum/T.TotalVote) * 100,2)) AS  PercentageOfVote from `PollOption` inner join (select pollID,(sum(votedNum)) AS  TotalVote from `PollOption` GROUP BY pollID) AS  T on PollOption.pollID= T.pollID  WHERE pollOptionID=? and sys = ?
+Fri, 15 Jun 18 03:37:20 +0000 : MySQLDB.php : 5b23346fdc189 : notice : paras:5,H
+Fri, 15 Jun 18 03:37:20 +0000 : MySQLDB.php : 5b23346fdc189 : notice : sql:select pollOptionID,votedNum,T.TotalVote,(FORMAT((votedNum/T.TotalVote) * 100,2)) AS  PercentageOfVote from `PollOption` inner join (select pollID,(sum(votedNum)) AS  TotalVote from `PollOption` GROUP BY pollID) AS  T on PollOption.pollID= T.pollID  WHERE pollOptionID=? and sys = ?
+Fri, 15 Jun 18 03:37:20 +0000 : MySQLDB.php : 5b23346fdc189 : notice : paras:6,H
+Fri, 15 Jun 18 03:37:20 +0000 : MySQLDB.php : 5b23346fdc189 : notice : sql:select pollOptionID,votedNum,T.TotalVote,(FORMAT((votedNum/T.TotalVote) * 100,2)) AS  PercentageOfVote from `PollOption` inner join (select pollID,(sum(votedNum)) AS  TotalVote from `PollOption` GROUP BY pollID) AS  T on PollOption.pollID= T.pollID  WHERE pollOptionID=? and sys = ?
+Fri, 15 Jun 18 03:37:20 +0000 : MySQLDB.php : 5b23346fdc189 : notice : paras:7,H
+Fri, 15 Jun 18 03:37:20 +0000 : MySQLDB.php : 5b23346fdc189 : notice : Closing log
+Fri, 15 Jun 18 03:37:23 +0000 : MySQLDB.php : 5b2334730b2a8 : notice : connected to server
+Fri, 15 Jun 18 03:37:23 +0000 : MySQLDB.php : 5b2334730b2a8 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:37:23 +0000 : MySQLDB.php : 5b2334730b2a8 : notice : paras:H
+Fri, 15 Jun 18 03:37:23 +0000 : MySQLDB.php : 5b2334730b2a8 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:37:23 +0000 : MySQLDB.php : 5b2334730b2a8 : notice : paras:5,H
+Fri, 15 Jun 18 03:37:23 +0000 : MySQLDB.php : 5b2334730b2a8 : notice : Closing log
+Fri, 15 Jun 18 03:37:25 +0000 : MySQLDB.php : 5b2334750841d : notice : connected to server
+Fri, 15 Jun 18 03:37:25 +0000 : MySQLDB.php : 5b2334750841d : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:37:25 +0000 : MySQLDB.php : 5b2334750841d : notice : paras:H
+Fri, 15 Jun 18 03:37:25 +0000 : MySQLDB.php : 5b2334750841d : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:37:25 +0000 : MySQLDB.php : 5b2334750841d : notice : paras:6,H
+Fri, 15 Jun 18 03:37:25 +0000 : MySQLDB.php : 5b2334750841d : notice : Closing log
+Fri, 15 Jun 18 03:37:26 +0000 : MySQLDB.php : 5b233476d0aac : notice : connected to server
+Fri, 15 Jun 18 03:37:26 +0000 : MySQLDB.php : 5b233476d0aac : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:37:26 +0000 : MySQLDB.php : 5b233476d0aac : notice : paras:H
+Fri, 15 Jun 18 03:37:26 +0000 : MySQLDB.php : 5b233476d0aac : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:37:26 +0000 : MySQLDB.php : 5b233476d0aac : notice : paras:7,H
+Fri, 15 Jun 18 03:37:26 +0000 : MySQLDB.php : 5b233476d0aac : notice : Closing log
+Fri, 15 Jun 18 03:37:28 +0000 : MySQLDB.php : 5b2334781e5a2 : notice : connected to server
+Fri, 15 Jun 18 03:37:28 +0000 : MySQLDB.php : 5b2334781e5a2 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:37:28 +0000 : MySQLDB.php : 5b2334781e5a2 : notice : paras:H
+Fri, 15 Jun 18 03:37:28 +0000 : MySQLDB.php : 5b2334781e5a2 : notice : Closing log
+Fri, 15 Jun 18 03:37:28 +0000 : MySQLDB.php : 5b23347832732 : notice : connected to server
+Fri, 15 Jun 18 03:37:28 +0000 : MySQLDB.php : 5b23347832732 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:37:28 +0000 : MySQLDB.php : 5b23347832732 : notice : paras:H
+Fri, 15 Jun 18 03:37:28 +0000 : MySQLDB.php : 5b23347832732 : notice : Closing log
+Fri, 15 Jun 18 03:37:36 +0000 : MySQLDB.php : 5b233480b6f88 : notice : connected to server
+Fri, 15 Jun 18 03:37:36 +0000 : MySQLDB.php : 5b233480b6f88 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:37:36 +0000 : MySQLDB.php : 5b233480b6f88 : notice : paras:H
+Fri, 15 Jun 18 03:37:36 +0000 : MySQLDB.php : 5b233480b6f88 : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:37:36 +0000 : MySQLDB.php : 5b233480b6f88 : notice : paras:James002,H
+Fri, 15 Jun 18 03:37:36 +0000 : MySQLDB.php : 5b233480b6f88 : notice : Closing log
+Fri, 15 Jun 18 03:37:36 +0000 : MySQLDB.php : 5b233480e18c4 : notice : connected to server
+Fri, 15 Jun 18 03:37:36 +0000 : MySQLDB.php : 5b233480e18c4 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:37:36 +0000 : MySQLDB.php : 5b233480e18c4 : notice : paras:H
+Fri, 15 Jun 18 03:37:36 +0000 : MySQLDB.php : 5b233480e18c4 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:37:36 +0000 : MySQLDB.php : 5b233480e18c4 : notice : paras:5,H
+Fri, 15 Jun 18 03:37:36 +0000 : MySQLDB.php : 5b233480e18c4 : notice : Closing log
+Fri, 15 Jun 18 03:38:02 +0000 : MySQLDB.php : 5b23349a2e39a : notice : connected to server
+Fri, 15 Jun 18 03:38:02 +0000 : MySQLDB.php : 5b23349a2e39a : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:38:02 +0000 : MySQLDB.php : 5b23349a2e39a : notice : paras:H
+Fri, 15 Jun 18 03:38:02 +0000 : MySQLDB.php : 5b23349a2e39a : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:38:02 +0000 : MySQLDB.php : 5b23349a2e39a : notice : paras:5,H
+Fri, 15 Jun 18 03:38:02 +0000 : MySQLDB.php : 5b23349a2e39a : notice : Closing log
+Fri, 15 Jun 18 03:38:04 +0000 : MySQLDB.php : 5b23349c1e2d0 : notice : connected to server
+Fri, 15 Jun 18 03:38:04 +0000 : MySQLDB.php : 5b23349c1e2d0 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:38:04 +0000 : MySQLDB.php : 5b23349c1e2d0 : notice : paras:H
+Fri, 15 Jun 18 03:38:04 +0000 : MySQLDB.php : 5b23349c1e2d0 : notice : Closing log
+Fri, 15 Jun 18 03:38:04 +0000 : MySQLDB.php : 5b23349c337a8 : notice : connected to server
+Fri, 15 Jun 18 03:38:04 +0000 : MySQLDB.php : 5b23349c337a8 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:38:04 +0000 : MySQLDB.php : 5b23349c337a8 : notice : paras:H
+Fri, 15 Jun 18 03:38:04 +0000 : MySQLDB.php : 5b23349c337a8 : notice : Closing log
+Fri, 15 Jun 18 03:38:09 +0000 : MySQLDB.php : 5b2334a1dd07d : notice : connected to server
+Fri, 15 Jun 18 03:38:09 +0000 : MySQLDB.php : 5b2334a1dd07d : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:38:09 +0000 : MySQLDB.php : 5b2334a1dd07d : notice : paras:H
+Fri, 15 Jun 18 03:38:09 +0000 : MySQLDB.php : 5b2334a1dd07d : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:38:09 +0000 : MySQLDB.php : 5b2334a1dd07d : notice : paras:James002,H
+Fri, 15 Jun 18 03:38:10 +0000 : MySQLDB.php : 5b2334a1dd07d : notice : Closing log
+Fri, 15 Jun 18 03:38:10 +0000 : MySQLDB.php : 5b2334a213ea3 : notice : connected to server
+Fri, 15 Jun 18 03:38:10 +0000 : MySQLDB.php : 5b2334a213ea3 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:38:10 +0000 : MySQLDB.php : 5b2334a213ea3 : notice : paras:H
+Fri, 15 Jun 18 03:38:10 +0000 : MySQLDB.php : 5b2334a213ea3 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:38:10 +0000 : MySQLDB.php : 5b2334a213ea3 : notice : paras:5,H
+Fri, 15 Jun 18 03:38:10 +0000 : MySQLDB.php : 5b2334a213ea3 : notice : Closing log
+Fri, 15 Jun 18 03:38:46 +0000 : MySQLDB.php : 5b2334c68ea83 : notice : connected to server
+Fri, 15 Jun 18 03:38:46 +0000 : MySQLDB.php : 5b2334c68ea83 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:38:46 +0000 : MySQLDB.php : 5b2334c68ea83 : notice : paras:H
+Fri, 15 Jun 18 03:38:46 +0000 : MySQLDB.php : 5b2334c68ea83 : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:38:46 +0000 : MySQLDB.php : 5b2334c68ea83 : notice : paras:5,H
+Fri, 15 Jun 18 03:38:46 +0000 : MySQLDB.php : 5b2334c68ea83 : notice : Closing log
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : connected to server
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : paras:H
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : sql:select * from `Poll`  WHERE pollID=? and sys = ?
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : paras:2,H
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : sql:select * from `Board`  WHERE boardID=? and sys = ?
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : paras:5,H
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : sql:select * from `UserInfo`  WHERE userID=? and sys = ?
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : paras:4,H
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : sql:select * from `PollOption`  WHERE pollID=? and sys = ?
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : paras:2,H
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : sql:select pollOptionID,votedNum,T.TotalVote,(FORMAT((votedNum/T.TotalVote) * 100,2)) AS  PercentageOfVote from `PollOption` inner join (select pollID,(sum(votedNum)) AS  TotalVote from `PollOption` GROUP BY pollID) AS  T on PollOption.pollID= T.pollID  WHERE pollOptionID=? and sys = ?
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : paras:3,H
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : sql:select pollOptionID,votedNum,T.TotalVote,(FORMAT((votedNum/T.TotalVote) * 100,2)) AS  PercentageOfVote from `PollOption` inner join (select pollID,(sum(votedNum)) AS  TotalVote from `PollOption` GROUP BY pollID) AS  T on PollOption.pollID= T.pollID  WHERE pollOptionID=? and sys = ?
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : paras:4,H
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : sql:select pollOptionID,votedNum,T.TotalVote,(FORMAT((votedNum/T.TotalVote) * 100,2)) AS  PercentageOfVote from `PollOption` inner join (select pollID,(sum(votedNum)) AS  TotalVote from `PollOption` GROUP BY pollID) AS  T on PollOption.pollID= T.pollID  WHERE pollOptionID=? and sys = ?
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : paras:5,H
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : sql:select pollOptionID,votedNum,T.TotalVote,(FORMAT((votedNum/T.TotalVote) * 100,2)) AS  PercentageOfVote from `PollOption` inner join (select pollID,(sum(votedNum)) AS  TotalVote from `PollOption` GROUP BY pollID) AS  T on PollOption.pollID= T.pollID  WHERE pollOptionID=? and sys = ?
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : paras:6,H
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : sql:select pollOptionID,votedNum,T.TotalVote,(FORMAT((votedNum/T.TotalVote) * 100,2)) AS  PercentageOfVote from `PollOption` inner join (select pollID,(sum(votedNum)) AS  TotalVote from `PollOption` GROUP BY pollID) AS  T on PollOption.pollID= T.pollID  WHERE pollOptionID=? and sys = ?
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : paras:7,H
+Fri, 15 Jun 18 03:38:47 +0000 : MySQLDB.php : 5b2334c7d1a05 : notice : Closing log
+Fri, 15 Jun 18 03:38:49 +0000 : MySQLDB.php : 5b2334c98eae6 : notice : connected to server
+Fri, 15 Jun 18 03:38:49 +0000 : MySQLDB.php : 5b2334c98eae6 : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:38:49 +0000 : MySQLDB.php : 5b2334c98eae6 : notice : paras:H
+Fri, 15 Jun 18 03:38:49 +0000 : MySQLDB.php : 5b2334c98eae6 : notice : Closing log
+Fri, 15 Jun 18 03:38:49 +0000 : MySQLDB.php : 5b2334c99ebbb : notice : connected to server
+Fri, 15 Jun 18 03:38:49 +0000 : MySQLDB.php : 5b2334c99ebbb : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:38:49 +0000 : MySQLDB.php : 5b2334c99ebbb : notice : paras:H
+Fri, 15 Jun 18 03:38:49 +0000 : MySQLDB.php : 5b2334c99ebbb : notice : Closing log
+Fri, 15 Jun 18 03:38:55 +0000 : MySQLDB.php : 5b2334cf9496d : notice : connected to server
+Fri, 15 Jun 18 03:38:55 +0000 : MySQLDB.php : 5b2334cf9496d : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:38:55 +0000 : MySQLDB.php : 5b2334cf9496d : notice : paras:H
+Fri, 15 Jun 18 03:38:55 +0000 : MySQLDB.php : 5b2334cf9496d : notice : sql:select * from `UserInfo`  WHERE loginName=? and sys = ?
+Fri, 15 Jun 18 03:38:55 +0000 : MySQLDB.php : 5b2334cf9496d : notice : paras:James002,H
+Fri, 15 Jun 18 03:38:55 +0000 : MySQLDB.php : 5b2334cf9496d : notice : Closing log
+Fri, 15 Jun 18 03:38:55 +0000 : MySQLDB.php : 5b2334cfc54bf : notice : connected to server
+Fri, 15 Jun 18 03:38:55 +0000 : MySQLDB.php : 5b2334cfc54bf : notice : sql:select * from `Board`  WHERE sys = ?
+Fri, 15 Jun 18 03:38:55 +0000 : MySQLDB.php : 5b2334cfc54bf : notice : paras:H
+Fri, 15 Jun 18 03:38:55 +0000 : MySQLDB.php : 5b2334cfc54bf : notice : sql:select UserInfo.userID,loginName,Poll.pollID,postNum,viewNum,postDate,question,content,optionType,Poll.boardID,boardName from UserInfo inner join Poll on UserInfo.userID = Poll.userID inner join Board on Poll.boardID = Board.boardID  where Board.boardID=? and Poll.sys=? ORDER BY  UserInfo.userID,Poll.pollID Limit 20
+Fri, 15 Jun 18 03:38:55 +0000 : MySQLDB.php : 5b2334cfc54bf : notice : paras:5,H
+Fri, 15 Jun 18 03:38:55 +0000 : MySQLDB.php : 5b2334cfc54bf : notice : Closing log
