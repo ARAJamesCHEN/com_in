@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="849605aa-e7da-4d87-a070-1c5f397a70a9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/LogoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/LogoutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comphp/Comphp.php" beforeDir="false" afterPath="$PROJECT_DIR$/comphp/Comphp.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comphp/log/Logger.phpMySQL.log" beforeDir="false" afterPath="$PROJECT_DIR$/comphp/log/Logger.phpMySQL.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sess_pmgrd8vdtg8jh5299nd39nddru" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,20 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="internationalization.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comphp/lang/internationalization.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="154">
+              <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -92,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comphp.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Comphp.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comphp/Comphp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
+            <state relative-caret-position="544">
+              <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
             </state>
           </provider>
         </entry>
@@ -353,7 +337,7 @@
       <workItem from="1528940660747" duration="2984000" />
       <workItem from="1528969116000" duration="8042000" />
       <workItem from="1529012995757" duration="3594000" />
-      <workItem from="1529017919708" duration="5526000" />
+      <workItem from="1529017919708" duration="5651000" />
     </task>
     <task id="LOCAL-00001" summary="poll result">
       <created>1528806581420</created>
@@ -411,15 +395,21 @@
       <option name="project" value="LOCAL" />
       <updated>1529014156834</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="init intelnational language">
+      <created>1529023557871</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1529023557871</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191501000" />
+    <option name="totallyTimeSpent" value="191626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2703125" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -483,7 +473,8 @@
     <MESSAGE value="complex query" />
     <MESSAGE value="add log to query" />
     <MESSAGE value="option handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="option handler" />
+    <MESSAGE value="init intelnational language" />
+    <option name="LAST_COMMIT_MESSAGE" value="init intelnational language" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -803,13 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/LogoutController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
@@ -841,13 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comphp/lang/internationalization.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comphp/lang/messages.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -857,8 +834,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comphp/Comphp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
+        <state relative-caret-position="544">
+          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comphp/lang/internationalization.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
