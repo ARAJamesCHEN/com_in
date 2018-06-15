@@ -2,7 +2,7 @@
      <p class='bg-danger text-white'><?php echo $formBean->getWarning();?></p>
        <section class="breadcrumbs">
 			<ul class="display-flex">
-				<li><a href="#" rel="nofollow">Forums1</a></li>
+				<li><a href="#" rel="nofollow">Forums</a></li>
 				<li><a href="<?php
                     $boardID =  $pollRstBean->getBoardID();
                     echo "post.php?doboard_$boardID"?>" rel="nofollow"><?php echo $pollRstBean->getBoardName() ?></a></li>

@@ -92,6 +92,7 @@ class PollRstController extends ForwardController
 
         }else{
             $this->formBean->setWarning('Please select a poll first!');
+            header( 'Location:post.php' ) ;
         }
 
 
@@ -111,6 +112,7 @@ class PollRstController extends ForwardController
 
             $optionSelected = $formBean->getOptionSelected();
 
+            //var_dump($optionSelected);
 
             try {
                 $rst = (new Handler())->callPollOptionService(new PollOptionServiceImpl())->updatePollOptionsVotedNumByIDWithCollection($optionSelected);

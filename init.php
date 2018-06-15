@@ -44,7 +44,7 @@ function update(){
 
         $data = array('loginPwd' => $hash);
 
-        $count = (new UserModel)->where(['loginName = ?', "or sys='H'"], [$usrName])->update($data);
+        $count = (new UserModel)->where(['loginName = ?', "or sys='G'"], [$usrName])->update($data);
 
         echo "$count rows has been updated!<br>";
     }

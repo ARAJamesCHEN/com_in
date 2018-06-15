@@ -11,7 +11,7 @@ $config['db']['host'] = 'localhost';
 $config['db']['username'] = 'root';
 $config['db']['password'] = '';
 $config['db']['dbname'] = 'php_comdb';
-$config['db']['sys'] = 'G';
+$config['db']['sys'] = 'H';
 
 $config['defaultController'] = 'login';
 $config['defaultView'] = 'login';

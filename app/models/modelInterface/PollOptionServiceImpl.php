@@ -74,6 +74,8 @@ class PollOptionServiceImpl implements PollOptionService
 
         $votedPercentage = (new ModelUtil())->getPollOptionVotedPercentage($result);
 
+        //var_dump($votedPercentage);
+
         if(is_null($result) || !$result){
             $rst->setIsSuccess(false);
         }else{

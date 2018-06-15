@@ -9,7 +9,12 @@
 //session_start();
 
 function msg($s){
-    $locale = $_SESSION["lang"];
+
+    if(isset($_SESSION["lang"])){
+        $locale = $_SESSION["lang"];
+    }else{
+        $locale = 'in';
+    }
 
     //var_dump($_SESSION);
 

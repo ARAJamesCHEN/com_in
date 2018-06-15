@@ -35,11 +35,11 @@ include(APP_PATH . 'comphp/lang/'.'internationalization.php');
 	    </div>
 		<nav class="col">
 		    <ul>
-			    <li id="navHome" class="nav-item"><a class="nav-link" href="temp.html" rel="nofollow">Home</a></li>
+			    <li id="navHome" class="nav-item"><a class="nav-link" href="temp.html" rel="nofollow"><?php echo msg('headerHome'); ?></a></li>
 			    <!--li id="navPost"><a href="post.php" rel="nofollow">Forms</a></li-->
                 <li id="navPost" class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Forms
+                        <?php echo msg('headerForms'); ?>
                     </a>
                     <div class="dropdown-menu">
                         <?php
@@ -59,14 +59,22 @@ include(APP_PATH . 'comphp/lang/'.'internationalization.php');
 
 					   if(isset($_SESSION[ 'theUsrName' ]) && !empty($_SESSION[ 'theUsrName' ]) ){
 						   $theUsrName = $_SESSION['theUsrName'];
-						   echo "<a href='#'  rel='nofollow'>User:$theUsrName</a> /
-                                 <a href='logout.php'  rel='nofollow'>LogOut</a>
+
+						   $headerUsr = msg('headerUsr');
+						   $headerLogout = msg('headerLogout');
+
+						   echo "<a href='#'  rel='nofollow'>$headerUsr:$theUsrName</a> /
+                                 <a href='logout.php'  rel='nofollow'>$headerLogout</a>
                                 </li>";
 					   }else{
-						   echo '<a href="login.php" class="nav-link"  rel="nofollow">Sign in/Join</a></li>';
+
+					       $headerSign = msg('headerSign');
+                           $headerJoin =  msg('headerJoin');
+
+						   echo "<a href=\"login.php\" class=\"nav-link\"  rel=\"nofollow\">$headerSign/$headerJoin</a></li>";
 					   }
 				    ?>
-			    <li id="navAboutUs" class="nav-item"><a href="temp.html" class="nav-link" rel="nofollow">About us</a></li>
+			    <li id="navAboutUs" class="nav-item"><a href="temp.html" class="nav-link" rel="nofollow"><?php echo msg('headerAbout'); ?></a></li>
 		    </ul>
 		    <input id="searchbox" type="text" name="search" placeholder="Search..">
 	    </nav>
