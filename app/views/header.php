@@ -19,7 +19,7 @@ include(APP_PATH . 'comphp/lang/'.'internationalization.php');
             }else{
                 echo  'Login';
             }
-        ?>:: Theseus and the Minotaur Gaming Community</title>
+        ?>:: Hindi Language Learning Community</title>
 	<!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 
