@@ -80,15 +80,18 @@ class PollRstController extends ForwardController
             $this->formBean->setPageStatus(POLL_PAGE);
 
             if(!$this->isValidate()){
-                $result = $this->submitVote(new PollOptionServiceImpl(), $this->formBean);
+                $result = $this->submitVote($this->formBean);
 
                 if($result){
                     $this->formBean->setPageStatus(POLL_RST_PAGE);
                 }
             }
 
-
             $this->displayPollDetail($this->formBean->getPollId());
+
+            $_SESSION['PollId'] = $this->formBean->getPollId();
+
+            header( 'Location:pollRst.php?inti_rst') ;
 
         }else{
             $this->formBean->setWarning('Please select a poll first!');
@@ -102,7 +105,7 @@ class PollRstController extends ForwardController
         $this->render();
     }
 
-    private function submitVote(PollOptionService $pollOptionService,&$formBean){
+    private function submitVote(&$formBean){
 
         $rst = new RstBean();
 

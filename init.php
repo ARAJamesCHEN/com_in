@@ -33,7 +33,7 @@ function update(){
         'newOne001' => 'newOne0101',
         'newTwo002' => 'newTwo0102',
         'James002'=> 'James0102',
-        'Amit002' => 'Amit0102',
+        'Amit002' => 'Amit0102!',
         'Mate002' => 'Mate0102'
     );
 

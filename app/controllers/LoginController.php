@@ -91,7 +91,7 @@ class LoginController extends Controller
 
                         }else{
 
-                            if(ValidateUtil::validateIfWeakPwd($this->formBean->getFormUsrPwd())){
+                            if(!ValidateUtil::validateIfWeakPwd($this->formBean->getFormUsrPwd())){
                                 $_SESSION[ 'isWeakPwd' ] = "true";
                                 $_SESSION[ 'isDisplayed' ] = "false";
                                 //echo "<script type='text/javascript'>alert('Login successfully! Your passwords is weak. We suggest you to modify the password!')</script>";
@@ -152,8 +152,7 @@ class LoginController extends Controller
 
         if(isset($_POST['user_pwd'])&& !empty($_POST['user_pwd'])){
             $this->formBean->setFormUsrPwd($_POST['user_pwd']);
-
-            if(ValidateUtil::validateIfPwdUnleagal($this->formBean->getFormUsrPwd())){
+            if(!ValidateUtil::validatePwdForm($this->formBean->getFormUsrPwd())){
                 $this->formBean->setWarning("Please input the right style password");
                 $hasIssue = true;
             }

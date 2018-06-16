@@ -13,25 +13,39 @@ class ValidateUtil {
 		
 		return false;
 	}
-	
-	public static function validateIfPwdUnleagal($pwd){
-		
-		$pattern = '/[\'.,:;*?~`!@#$%^&+=)(<>{}]|\]|\[|\/|\\\|\"|\|/';
-		
-		if(preg_match($pattern, $pwd)) {
+
+    public static function validatePwdForm($pwd){
+        if(preg_match("/^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$/", $pwd)) {
             return true;
         }else {
             return false;
         }
-	}
-	
-	
-	public static function validateIfWeakPwd($pwd){
-		if(preg_match("/^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$/", $pwd)) {
-            return true;
-        }else {
+    }
+
+	public static function validateIfWeakPwd($candidate){
+
+        $r1='/[A-Z]/';  //uppercase
+        $r2='/[a-z]/';  //lowercase
+        $r3='/[0-9]/';  //numbers
+        $r4='/[~!@#$%^&*()\-_=+{};:<,.>?]/';  // special char
+
+        if(preg_match_all($r1,$candidate, $o)<1) {
             return false;
         }
+        if(preg_match_all($r2,$candidate, $o)<1) {
+            return false;
+        }
+        if(preg_match_all($r3,$candidate, $o)<1) {
+            return false;
+        }
+        if(preg_match_all($r4,$candidate, $o)<1) {
+            return false;
+        }
+        if(strlen($candidate)<8) {
+            return false;
+        }
+
+        return true;
 	}
 	
 }

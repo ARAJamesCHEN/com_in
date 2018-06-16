@@ -131,7 +131,10 @@
 
                                                        }
 
-
+                                                    echo "<br>";
+                                                    $content = $pollRstBean->getContent();
+                                                    echo "<p>$content</p>";
+                                                    echo "<br>";
 
                                                     ?>
 												</form>
