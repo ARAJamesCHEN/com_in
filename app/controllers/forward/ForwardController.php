@@ -8,7 +8,7 @@
 
 namespace app\controllers\forward;
 
-class ForwardController extends \comphp\base\Controller
+abstract class ForwardController extends \comphp\base\Controller
 {
 
     public function forwardToLogin(){

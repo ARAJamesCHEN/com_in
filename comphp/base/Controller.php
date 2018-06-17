@@ -13,7 +13,7 @@ use app\models\modelInterface\BoardModelServiceImpl;
  * Class Controller
  * @package comphp\base
  */
-class Controller
+abstract class Controller
 {
     protected $_controller;
     protected $_viewName;
@@ -28,17 +28,19 @@ class Controller
         $this->_viewName = $viewName;
         $this->_view = new View($controller, $viewName);
         $this->_actionName = $actionName;
-
+        $this->assignFormBean();
         $this->init();
 
 
     }
 
-    public function init(){
+    public function assignFormBean(){
         $this->_formbean = new FormBean();
         $this->initViewParasFunction(new BoardModelServiceImpl());
         $this->assign('_fromBean', $this->_formbean);
     }
+
+    public abstract function init();
 
     private function initViewParasFunction(BoardModelService $boardModelService){
 
